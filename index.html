@@ -7,13 +7,28 @@
     <link rel="stylesheet" href="estilo.css"> 
 </head>
 <body>
-    <header><h1>Calcular o saldo bancário</h1> </header>
+    <header><h1>Calcular o saldo bancário</h1></header>
 
-    <section>
-        <div> 
-            <input type="text" id="saldo_inicial">   
-        </div>
-    </section>   
+    <div> 
+        Saldo Bancário: R$ <input type="text" id="saldo_inicial">
+        Valor Despesa: R$ <input type="text">
+        <input type="button" value="Calcular Saldo" onclick="calcular_saldo()">  
+    </div>
+    
+    <table border="1">
+  <tr>
+    <th>Valor Total Despesa</th>
+    <th>Saldo Bancário</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td id="saldo_inicial">a</td>
+  </tr>
+  <tr>
+    <td>aaa</td>
+    <td>bbb</td>
+  </tr>
+</table>   
 </body>
 </html>
 <script src="codigo.js"></script>
