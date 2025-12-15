@@ -15,7 +15,8 @@ document.getElementById('despesa').addEventListener('keydown', function(event) {
         valor_despesa = parseFloat(this.value.replace(".", "").replace(",", "."));
         saldo_bancario -= valor_despesa;
         document.getElementById('tabela').innerHTML += `<tr><td>R$ ${valor_despesa.toFixed(2).replace(".", ",")}</td><td>R$ ${saldo_bancario.toFixed(2).replace(".", ',')}</td></tr>`;
-        document.getElementById('despesa').value = '';     
+        document.getElementById('despesa').value = '';
+        window.scrollTo({top: document.body.scrollHeight});     
     }});
 
 
