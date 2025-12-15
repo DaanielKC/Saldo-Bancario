@@ -4,7 +4,9 @@ let valor_despesa = 0;
 document.getElementById('saldo').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         saldo_bancario = parseFloat(this.value.replace(".", "").replace(",", "."));
-        document.getElementById('saldo_inicial').textContent = `R$ ${saldo_bancario.toFixed(2).replace(".", ",")}`;
+        this.value = '';
+        document.getElementById('tabela').innerHTML = `<tr><th>Valor Total Despesa</th><th>Saldo Bancário</th></tr>`;
+        document.getElementById('tabela').innerHTML += `<tr><td></td><td>R$ ${saldo_bancario.toFixed(2).replace(".", ",")}</td></tr>`;
             
 }});
 
